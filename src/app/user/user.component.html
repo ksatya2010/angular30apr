@@ -1,0 +1,15 @@
+ <p>user name:{{name}}</p> 
+<label class="formlabel">name:</label>
+<input type="text" class="form-control" id="name" [(ngModel)]="name1">
+<button class="btn btn-primary" [disabled]="!btnStatus"(click)="createuser()">submit</button><br>
+{{name1}} 
+<div *ngIf="users.length > 0;else noUsers">
+    <app-users *ngFor="let user of users" [username]="user"></app-users>
+</div>
+
+    <ng-template #noUsers>
+        <p>No Users</p>
+    </ng-template>
+    
+       
+    

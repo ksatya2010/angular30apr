@@ -1,0 +1,89 @@
+<p>directives works!</p>
+<p>{{var_name}}</p>
+<input type="text" [(ngModel)]="var_name">
+<button type="button" (click)="displaydata()">display</button>
+<button type="button" (click)="add()">add</button>
+<button type="button" (click)="sub()">sub</button>
+<h1>{{x}}</h1>
+<button type="button" (click)="buttonclick()">buttononclick</button>
+<div *ngIf="v_n">
+   
+    <p>data true</p>
+</div>
+<div *ngIf = "!v_n">
+   
+    <p>data false</p>
+</div>
+<div *ngFor="let x of var_n">
+    <h1>{{x}}</h1></div>
+
+    <div *ngFor="let y in col let i=index">
+    <h4 >{{y}}</h4>
+    <h1 *ngIf="i==0" [ngStyle]="{'color':'yellow'}">{{col[0]}}</h1>
+    <h1 *ngIf="i==0" [ngStyle]="{'color':'yellow'}">{{col[1]}}</h1>
+    <h1 *ngIf="i==0" [ngStyle]="{'color':'yellow'}">{{col[2]}}</h1>
+    <h1 *ngIf="i==0" [ngStyle]="{'color':'yellow'}">{{col[3]}}</h1></div>
+
+ 
+    
+    <h1>{{col}}</h1>
+    <div [ngStyle]="{'color':'yellow'}">
+    
+        <h1>{{col[0]}}</h1>
+    </div>
+    <div [ngStyle]="{'color':'red'}">
+    
+        <h1>{{col[1]}}</h1>
+    </div>
+    <div [ngStyle]="{'color':'green'}">
+    
+        <h1>{{col[2]}}</h1>
+    </div>
+    <div [ngStyle]="{'color':'black'}">
+    
+        <h1>{{col[3]}}</h1>
+    </div> 
+    
+
+
+<div [ngStyle]="{'color':'yellow'}">
+    this is yellow
+    <h1>{{var_name}}</h1>
+</div>
+<div [ngStyle]="{'color':x>10?'red':'green'}">
+    this is green
+   
+</div>
+
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>

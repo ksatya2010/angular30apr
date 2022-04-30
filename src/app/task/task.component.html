@@ -1,0 +1,41 @@
+
+<div *ngFor="let y of col let i=index">
+   
+    <h1 id="0" *ngIf="i==0">{{col[0]}}</h1>
+    <h2 id="1" *ngIf="i==1" >{{col[1]}}</h2>
+    <h3 id="2" *ngIf="i==2" >{{col[2]}}</h3>
+    <h4 id="3"  *ngIf="i==3">{{col[3]}}</h4> </div>
+
+    <!-- <div [ngSwitch]=“a[i]!=0”>
+        <div *ngSwitchCase1 =“’a[i] == yellow’”>casename1</div>
+        <div *ngSwitchCase2 =“’a[i]==red’”>casename2</div>
+        <div *ngSwitchCase3 =“’a[i]==green’”>casename1</div>
+        <div *ngSwitchCase4 =“’a[i]==black’”>casename2</div>
+        
+        </div> -->
+        
+
+      
+       <form>
+        <h1>FORM</h1>
+       <label>NAME</label>
+    <input type="text" [(ngModel)]="var_name"><br><br>
+    <label>EMAIL</label>
+    <input type="text" [(ngModel)]="var_name1"><br><br>
+    <label>PSWD</label>
+    <input type="password" [(ngModel)]="var_name2"><br><br>
+    <label>PHNO</label>
+    <input type="number" [(ngModel)]="var_name3"><br><br>
+    <label>ADDRESS</label>
+    <textarea [(ngModel)]="var_name4"></textarea><br><br>
+  
+        <label>GENDER</label>
+        <input type="radio" [(ngModel)]="var_name1"><label>male</label>
+        <input type="radio" [(ngModel)]="var_name1"><label>female</label><br><br>
+  
+    <button type="button" (click)="submit()">submit</button>
+    <button type="button" (click)="reset()">reset</button>
+       </form>
+ 
+    
+  

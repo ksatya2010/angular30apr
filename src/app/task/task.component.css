@@ -1,0 +1,36 @@
+h3{
+    color:green;
+    background-color:rgb(204, 247, 204);
+    
+}
+h1{
+    color:yellow;
+    background-color:rgb(233, 233, 159);
+}
+h2{
+    color:red;
+    background-color:rgb(239, 185, 185);
+}
+h4{
+    color:black;
+    background-color:rgb(123, 118, 118);
+}
+form{
+    border:2px solid black;
+    width:400px;
+    height:530px;
+    margin:20px;
+}
+form{
+    margin-left: 300px;
+}
+input{
+    border:none;
+    border-bottom: 2px solid black;
+    border-radius:2px;
+    margin-left:40px;
+}
+label{
+    padding:10px;
+    padding-right: 10px;
+}
