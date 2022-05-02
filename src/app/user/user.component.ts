@@ -23,10 +23,10 @@ togglebtnStatus(){
 updatename(event:any){
   this.name=event.target.value;
 }
-createuser(){
+createUser1(name1:string){
   if(this.name1 !=''){
     console.log(typeof this.users);
-    this.users.push(this.name1);
+    this.users.push(name1);
     this.name1='';
   }
   console.log(this.users);

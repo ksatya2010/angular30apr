@@ -1,8 +1,7 @@
- <p>user name:{{name}}</p> 
-<label class="formlabel">name:</label>
-<input type="text" class="form-control" id="name" [(ngModel)]="name1">
-<button class="btn btn-primary" [disabled]="!btnStatus"(click)="createuser()">submit</button><br>
-{{name1}} 
+ <p>user name:{{name1}}</p> 
+ <app-add-user (userCreated)="createUser1($event) "></app-add-user>
+
+<!-- {{name1}}  -->
 <div *ngIf="users.length > 0;else noUsers">
     <app-users *ngFor="let user of users" [username]="user"></app-users>
 </div>
@@ -12,4 +11,3 @@
     </ng-template>
     
        
-    
